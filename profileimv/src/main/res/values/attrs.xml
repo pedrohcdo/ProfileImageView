@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ProfileImageView">
+        <attr name="border" format="boolean"/>
+        <attr name="shadow" format="boolean"/>
+        <attr name="image" format="reference"/>
+        <attr name="featureIcon" format="reference"/>
+        <attr name="featureText" format="string"/>
+        <attr name="featureColor" format="color"/>
+        <attr name="selectableColor" format="color"/>
+        <attr name="imageScale" format="float"/>
+        <attr name="imageScrollX" format="float"/>
+        <attr name="imageScrollY" format="float"/>
+        <attr name="borderRadius" format="dimension"/>
+        <attr name="borderColor" format="color"/>
+        <attr name="backgroundColor" format="color"/>
+        <attr name="shadowColor" format="color"/>
+
+        <attr name="mode" format="enum">
+            <enum name="portrait" value="0"/>
+            <enum name="selectable" value="1"/>
+            <enum name="feature" value="2"/>
+        </attr>
+        <attr name="imageScaleMode" format="enum">
+            <enum name="fit" value="0"/>
+            <enum name="center" value="1"/>
+        </attr>
+        <attr name="frame" format="dimension">
+            <enum name="triangle" value="0"/>
+            <enum name="square" value="1"/>
+            <enum name="circle" value="2"/>
+            <enum name="pentagon" value="3"/>
+            <enum name="hexagon" value="4"/>
+            <enum name="heptagon" value="5"/>
+            <enum name="octagon" value="6"/>
+            <enum name="enneagon" value="7"/>
+            <enum name="decagon" value="8"/>
+            <enum name="star" value="9"/>
+            <enum name="diamond" value="10"/>
+        </attr>
+
+    </declare-styleable>
+</resources>

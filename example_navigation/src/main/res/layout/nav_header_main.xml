@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="210dp"
+    android:background="@drawable/header"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <org.material.profileimv.ProfileImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:image="@drawable/g"
+            app:mode="selectable"
+            app:shadow="true"
+            app:border="true"
+            android:layout_marginTop="30dp"
+            app:borderRadius="3dp"
+            app:borderColor="#FFFFFF"
+            app:shadowColor="#AA000000"
+            app:imageScaleMode="fit"
+            app:imageScrollX="-1"
+            app:imageScrollY="1"
+            app:frame="hexagon"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/nav_header_vertical_spacing"
+            android:text="Hello world .."
+            android:layout_marginTop="-5dp"
+            android:layout_marginLeft="10dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="example@email.com"
+            android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+
+
+    <org.material.profileimv.ProfileImageView
+        android:id="@+id/photo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:image="@drawable/g2"
+        app:mode="selectable"
+        app:border="false"
+        app:shadow="false"
+        app:borderColor="#FFFFFF"
+        app:shadowColor="#AA000000"
+        app:imageScaleMode="fit"
+        app:frame="circle"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <org.material.profileimv.ProfileImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:image="@drawable/g3"
+        app:mode="selectable"
+        app:border="false"
+        app:shadow="false"
+        app:borderColor="#FF000000"
+        app:shadowColor="#AA000000"
+        app:imageScaleMode="fit"
+        app:frame="circle"
+        android:layout_toLeftOf="@+id/photo"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"/>
+</RelativeLayout>

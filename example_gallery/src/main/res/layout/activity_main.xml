@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".galleryexample.MainActivity"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:text="Selectable Examples"
+                android:background="#34495e"
+                android:textColor="#FFFFFF"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/list_1"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:background="#E6E6E6"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:text="Feature Examples"
+                android:background="#34495e"
+                android:textColor="#FFFFFF"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/list_2"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:background="#E6E6E6"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:text="Portrait Examples"
+                android:background="#34495e"
+                android:textColor="#FFFFFF"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/list_3"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:background="#E6E6E6"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

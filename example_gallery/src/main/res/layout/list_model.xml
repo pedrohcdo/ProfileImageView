@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="170dp"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center">
+
+    <org.material.profileimv.ProfileImageView
+        android:id="@+id/profile_view"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        app:mode="portrait"
+        app:border="true"
+        app:shadow="true"
+        app:borderRadius="4dp"
+        app:borderColor="#FFFFFF"
+        app:shadowColor="#AA000000"
+        app:imageScaleMode="fit"
+        app:frame="circle" />
+</LinearLayout>
