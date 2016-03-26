@@ -763,7 +763,7 @@ public class ProfileImageView extends View {
         }
         // Border
         if(!isInEditMode() && mShadow)
-             mBorderPaint.setShadowLayer(4.0f * mDensity, 0, 2.0f * mDensity, mTheme.shadowColor);
+            mBorderPaint.setShadowLayer(4.0f * mDensity, 0, 2.0f * mDensity, mTheme.shadowColor);
         mBorderPaint.setColor(mTheme.borderColor);
         drawFrame(canvas, cx, cy, radius - shadowSize, mBorderPaint);
         if(!isInEditMode())
