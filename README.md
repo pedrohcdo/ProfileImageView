@@ -1,8 +1,7 @@
 The Profile Image View can be used to display profile picture or photo with frame, it is an advanced, flexible and optimized.
 
 Maven
-
-Gradle
+[ ![Download](https://api.bintray.com/packages/pedrohcdo/maven/profileimv/images/download.svg) ](https://bintray.com/pedrohcdo/maven/profileimv/_latestVersion)
 
 This library is available in maven and jcenter, add this code in Android Studio and Build:
 ---------------
@@ -20,9 +19,14 @@ Examples Screenshot (Included in project)
 ---------------
 
 Gallery Example:
-  
+
+<img src="https://github.com/pedrohcdo/ProfileImageView/blob/master/example_a.png" width="300px"/>
+<img src="https://github.com/pedrohcdo/ProfileImageView/blob/master/example_b.png" width="300px"/>
+
 Others Example:
 
+<img src="https://github.com/pedrohcdo/ProfileImageView/blob/master/example_c.png" width="300px"/>
+<img src="https://github.com/pedrohcdo/ProfileImageView/blob/master/example_d.png" width="300px"/>
  
 
 About
