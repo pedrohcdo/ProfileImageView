@@ -97,30 +97,48 @@ To use the View you will have a list of optional attributes:
 
 Eg. of usage in .java:
 
-    float density = context.getResources().getDisplayMetrics().density;
-    Bitmap image = ..
-    Bitmap featureIcon = ..
+        float density = context.getResources().getDisplayMetrics().density;
+        Bitmap image = ..
+        Bitmap featureIcon = ..
+        
+        ProfileImageView.Theme theme = new ProfileImageView.Theme();
+        theme.imageScale = 1;
+        theme.imageScrollX = 0;
+        theme.imageScrollY = 0;
+        theme.borderRadius = 2 * density;
+        theme.borderColor = Color.WHITE;
+        theme.backgroundColor = Color.WHITE;
+        theme.shadowColor = Color.BLACK;
+        theme.featureColor = 0xFF58B094;
+        theme.selectableColor = 0xFF58B094;
+        
+        ProfileImageView view = new ProfileImageView(context);
+        view.setMode(ProfileImageView.Mode.FEATURE);
+        view.setScaleMode(ProfileImageView.Mode.FIT);
+        view.setImage(image);
+        view.setTheme(theme);
+        view.setFeatureIcon(featureIcon);
+        view.setFrame(ProfileImageView.Frame.CIRCLE);
+        view.setBorder(true);
+        view.setShadow(true);
 
-    ProfileImageView.Theme theme = new ProfileImageView.Theme();
-    theme.imageScale = 1;
-    theme.imageScrollX = 0;
-    theme.imageScrollY = 0;
-    theme.borderRadius = 2 * density;
-    theme.borderColor = Color.WHITE;
-    theme.backgroundColor = Color.WHITE;
-    theme.shadowColor = Color.BLACK;
-    theme.featureColor = 0xFF58B094;
-    theme.selectableColor = 0xFF58B094;
 
-    ProfileImageView riv = new ProfileImageView(context);
-    riv.setMode(ProfileImageView.Mode.FEATURE);
-    riv.setScaleMode(ProfileImageView.Mode.FIT);
-    riv.setImage(image);
-    riv.setTheme(theme);
-    riv.setFeatureIcon(featureIcon);
-    riv.setFrame(ProfileImageView.Frame.CIRCLE);
-    riv.setBorder(true);
-    riv.setShadow(true);
+Custom Frames:
+
+        // To create custum Rounded Square use:
+        ProfileImageView.Frame frame = ProfileImageView.createRoundedSquare(radius); /* use radius between 0 - 1 */
+        // To create custom Ellipse use:
+        ProfileImageView.Frame frame = ProfileImageView.createEllipse(width, height); /* use width/height between 0 - 1 */
+        // To create custom Polygon:
+        ProfileImageView.Frame frame = ProfileImageView.createNgon(sides, rotate); /* use sides between 3-360, rotate used to align */
+        // To create custom shape, eg:
+        //   square
+        ProfileImageView.Frame frame = new ProfileImageView.Frame();
+        frame.addVertex(-1, -1);
+        frame.addVertex(1, -1);
+        frame.addVertex(1, 1);
+        frame.addVertex(-1, 1);
+        
 
 Bests Pratices
 ---------------
