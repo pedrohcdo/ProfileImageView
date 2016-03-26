@@ -50,7 +50,7 @@ Bests Pratices
 
 Tutorial:
 ---------------
-Eg. of usage in .xml:
+####Eg. of usage in .xml:
 
   <material.teste.teste.photo.ProfileImageView
       android:layout_width="150dp"
@@ -101,7 +101,7 @@ To use the View you will have a list of optional attributes:
   - center: Adjust the image across Frame
   - fit: Adjust the image across View
 
-Eg. of usage in .java:
+####Eg. of usage in .java:
 
         float density = context.getResources().getDisplayMetrics().density;
         Bitmap image = ..
