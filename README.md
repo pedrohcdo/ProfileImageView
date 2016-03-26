@@ -42,6 +42,12 @@ This view regards most contracts of a View, is a list of supported features
 - **Visual Studio Design:** This view is displayed correctly on Android Studio preview.
 Tutorial
 
+Bests Pratices
+---------------
+- For many galleries or view use bitmaps with the "setImage" or "setFeatureImage" and always recycle when not in use.
+- Do not use large images, this can cause an overload on the heap.
+- Before building new frames always make sure there is no standard frames included in the frame class, as they are more optimized.
+
 Tutorial:
 ---------------
 Eg. of usage in .xml:
@@ -139,11 +145,6 @@ Custom Frames:
         frame.addVertex(1, 1);
         frame.addVertex(-1, 1);
         
-
-Bests Pratices
----------------
-- For many galleries or view use bitmaps with the "setImage" or "setFeatureImage" and always recycle when not in use.
-- Do not use large images, this can cause an overload on the heap.
 
 Changelog
 ---------------
