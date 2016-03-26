@@ -13,7 +13,7 @@ This library is available in maven and jcenter, add this code in Android Studio 
     }
     
     dependencies {
-        compile ''org.pedrohc.profileimageview:profileimv:2.0.0'
+        compile 'org.pedrohc.profileimageview:profileimv:2.0.1'
     }
 
 Examples Screenshot (Included in project)
