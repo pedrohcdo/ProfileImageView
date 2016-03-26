@@ -1091,6 +1091,82 @@ public class ProfileImageView extends View {
         private boolean mNativeFrame = false;
 
         /**
+         * Create Rounded Square
+         *
+         * @param radius
+         * @return
+         */
+        final static public Frame createRoundedSquare(float radius) {
+            final Frame frame = new Frame();
+            radius = Math.max(Math.min(radius, 1.0f), 0.0f);
+            final double detail = 4f * Math.PI / 180.0f;
+            for (double i = 0; i < Math.PI / 2; i += detail) {
+                final float x = (float) (Math.cos(i) * radius) + (1 - radius);
+                final float y = (float) (Math.sin(i) * radius) + (1 - radius);
+                frame.addVertex(x, y);
+            }
+            for (double i = Math.PI / 2; i < Math.PI; i += detail) {
+                final float x = (float) (Math.cos(i) * radius) + (radius - 1);
+                final float y = (float) (Math.sin(i) * radius) + (1 - radius);
+                frame.addVertex(x, y);
+            }
+            for (double i = Math.PI; i < Math.PI * 1.5; i += detail) {
+                final float x = (float) (Math.cos(i) * radius) + (radius - 1);
+                final float y = (float) (Math.sin(i) * radius) + (radius - 1);
+                frame.addVertex(x, y);
+            }
+            for (double i = Math.PI * 1.5; i < Math.PI * 2; i += detail) {
+                final float x = (float) (Math.cos(i) * radius) + (1 - radius);
+                final float y = (float) (Math.sin(i) * radius) + (radius - 1);
+                frame.addVertex(x, y);
+            }
+            frame.setCenterSquareScale(ProfileImageViewUtils.calculateCenterScale(frame.mVertices));
+            return frame;
+        }
+
+
+        /**
+         * Create Ellipse
+         *
+         * @param width
+         * @param height
+         * @return
+         */
+        final public static Frame createEllipse(float width, float height) {
+            width = Math.max(Math.min(width, 1.0f), 0.0f);
+            height = Math.max(Math.min(height, 1.0f), 0.0f);
+            final Frame frame = new Frame();
+            final double detail = 4f * Math.PI / 180.0f;
+            for (double i = 0; i < Math.PI * 2; i += detail) {
+                float x = (float) (Math.cos(i) * width);
+                float y = (float) (Math.sin(i) * height);
+                frame.addVertex(x, y);
+            }
+            return frame;
+        }
+
+        /**
+         * Create N-gon
+         *
+         * @param sides
+         * @param rotate In degrees
+         * @return
+         */
+        final public static Frame createNgon(int sides, int rotate) {
+            sides = Math.max(Math.min(sides, 360), 3);
+            final Frame frame = new Frame();
+            final double detail = (Math.PI * 2) / sides;
+            final double align = -Math.PI / 2 + rotate * Math.PI / 180.0f;
+            for (int i = 0; i < sides; i++) {
+                float x = (float) Math.cos(i * detail + align);
+                float y = (float) Math.sin(i * detail + align);
+                frame.addVertex(x, y);
+            }
+            return frame;
+        }
+
+
+        /**
          * Add vertex
          *
          * @param x The value will be fixed between [-1, 1]
