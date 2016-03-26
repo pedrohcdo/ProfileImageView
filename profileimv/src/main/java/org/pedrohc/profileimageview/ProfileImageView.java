@@ -17,7 +17,6 @@ import android.graphics.Typeface;
 import android.os.Handler;
 import android.os.Message;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 
@@ -132,7 +131,6 @@ public class ProfileImageView extends View {
      * @param defStyle
      */
     private void init(Context context, AttributeSet attrs, int defStyle) {
-        Log.d("LogTest", "Created");
         // Uses
         TypedArray attributes = context.obtainStyledAttributes(attrs, R.styleable.ProfileImageView, defStyle, 0);
         mDensity = context.getResources().getDisplayMetrics().density;
