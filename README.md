@@ -1,6 +1,7 @@
-The Profile Image View can be used to display profile picture or photo with frame, it is an advanced, flexible and optimized.
+The Profile Image View can be used to display profile picture or photo with frame, it is an advanced, flexible and optimized. 
+Now you can choose the view mode of operation and choose various frames and can also create your own custom frame. :D
 
-Maven
+
 [ ![Download](https://api.bintray.com/packages/pedrohcdo/maven/profileimv/images/download.svg) ](https://bintray.com/pedrohcdo/maven/profileimv/_latestVersion)
 
 This library is available in maven and jcenter, add this code in Android Studio and Build:
