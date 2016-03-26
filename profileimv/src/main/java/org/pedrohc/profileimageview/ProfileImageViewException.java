@@ -1,4 +1,4 @@
-package org.material.profileimv;
+package org.pedrohc.profileimageview;
 
 /**
  * Shared Service Exception

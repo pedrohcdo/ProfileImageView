@@ -1,4 +1,4 @@
-package org.material.profileimv;
+package org.pedrohc.profileimageview;
 
 import android.content.res.Resources;
 import android.graphics.Bitmap;

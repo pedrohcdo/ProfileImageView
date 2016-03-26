@@ -1,4 +1,4 @@
-package org.material.profileimv;
+package org.pedrohc.profileimageview;
 
 import android.content.Context;
 import android.content.res.TypedArray;
