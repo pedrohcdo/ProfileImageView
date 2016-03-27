@@ -51,9 +51,10 @@ Bests Pratices
 
 Tutorial:
 ---------------
+
 ####Eg. of usage in .xml:
 
-  <material.teste.teste.photo.ProfileImageView
+    <material.teste.teste.photo.ProfileImageView
       android:layout_width="150dp"
       android:layout_height="150dp"
       app:mode="selectable"
