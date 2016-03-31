@@ -54,7 +54,7 @@ Tutorial:
 
 ####Eg. of usage in .xml:
 
-    <material.teste.teste.photo.ProfileImageView
+    <org.pedrohc.profileimageview.ProfileImageView
       android:layout_width="150dp"
       android:layout_height="150dp"
       app:mode="selectable"
