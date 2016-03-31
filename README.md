@@ -155,9 +155,9 @@ First release.
 
 Credits
 ---------------
-    Pedro Henrique Chaves
-    Facebook: https://www.facebook.com/pedro.hc.do
-    Github: https://github.com/pedrohcdo
+Pedro Henrique Chaves
+Facebook: https://www.facebook.com/pedro.hc.do
+Github: https://github.com/pedrohcdo
 
 Licence
 ---------------
